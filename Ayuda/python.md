@@ -10,11 +10,15 @@ python -m venv venv
 python -m pip install -r .\"Nombre_del_archivo_de_requerimientos".txt
 python -m pip install -r .\requirements.txt
 
+# Buscar Version de python
+python --version
+
 ## DJANGO
 
 # Iniciar proyecto Django
 django-admin startproject "nombre_del_proyecto"
 django-admin startproject webserver
 
-# Buscar Version de python
-python --version
+# Ejecutar el servidor
+dentro de la carpeta webserver
+python manage.py runserver

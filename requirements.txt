@@ -1,1 +1,5 @@
 django
+djangorestframework
+django-allauth
+django-cors-headers
+django-rest-auth-dj4
