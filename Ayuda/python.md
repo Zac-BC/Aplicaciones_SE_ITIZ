@@ -22,3 +22,15 @@ django-admin startproject webserver
 # Ejecutar el servidor
 dentro de la carpeta webserver
 python manage.py runserver
+
+# Creando app de nombre
+django-admin startapp "Nombre_de_la_app"
+django-admin startapp api
+
+# Denttro del archivo settings en webserver en "INSTALLED_APPS ="
+INSTALLED_APPS = [
+    "XXXXX",
+    "xxxxxx",
+
+    "api",
+]
