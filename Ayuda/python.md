@@ -10,6 +10,10 @@ python -m venv venv
 python -m pip install -r .\"Nombre_del_archivo_de_requerimientos".txt
 python -m pip install -r .\requirements.txt
 
+# Instalar requerimientos v2
+pip install -r .\"Nombre_del_archivo_de_requerimientos".txt
+pip intall -r  .\requirements.txt
+
 # Buscar Version de python
 python --version
 
