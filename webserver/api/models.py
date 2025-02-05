@@ -19,3 +19,15 @@ class Pokemon(models.Model):
         verbose_name = 'Pokemon'
         verbose_name_plural = "Pokemon's"
         ordering = ['id_pokemon']
+
+
+class Sensores(models.Model):
+    temperatura = models.DecimalField(verbose_name="Temperatura", decimal_places=4, max_digits=10, default=50.0)
+    humedad = models.DecimalField(verbose_name="Temperatura", decimal_places=4, max_digits=10, default=50.0)
+    creado      = models.DateTimeField(verbose_name="Fecha de creación", auto_now_add=True)
+    modificado  = models.DateTimeField(verbose_name="Fecha de modificación", auto_now=True)
+
+    class Meta:
+        verbose_name = 'Sensores'
+        verbose_name_plural = "Sensores"
+        ordering = ['id']

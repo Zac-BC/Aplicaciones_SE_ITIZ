@@ -38,3 +38,7 @@ INSTALLED_APPS = [
 
     "api",
 ]
+
+# Dentro de la carpeta webserver1 migra el modelo  un formato sqlite3
+python .\manage.py makemigrations
+

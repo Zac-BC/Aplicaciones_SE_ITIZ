@@ -3,5 +3,5 @@ from .views import PokemonAPIView
 
 app_name = 'api'
 urlspattern_api = [
-    path('pokemon/', PokemonAPIView.as_view(), name='listar')
+    path('acciones/', PokemonAPIView.as_view(), name='listar')
 ]
