@@ -1,44 +1,27 @@
 # entorno virtual
-python -m venv "nombre_del_entorno"
 python -m venv venv
 
-# activar entorno virtual (windows)
-.\"nombre_del_entorno"\Scripts\activate
+# activa el entorno virtual (windows)
 .\venv\Scripts\activate
 
-# Instalar requerimientos
-python -m pip install -r .\"Nombre_del_archivo_de_requerimientos".txt
+# instalar requerimientos en python 
 python -m pip install -r .\requirements.txt
 
-# Instalar requerimientos v2
-pip install -r .\"Nombre_del_archivo_de_requerimientos".txt
-pip intall -r  .\requirements.txt
+## Django
 
-# Buscar Version de python
-python --version
-
-## DJANGO
-
-# Iniciar proyecto Django
-django-admin startproject "nombre_del_proyecto"
+# Crear un proyecto
 django-admin startproject webserver
 
+     manage.py
+     webserver/
+         asgi.py
+         settings.py
+         urls.py
+         wsgy.py
 # Ejecutar el servidor
 dentro de la carpeta webserver
+    cd webserver
 python manage.py runserver
 
-# Creando app de nombre
-django-admin startapp "Nombre_de_la_app"
-django-admin startapp api
-
-# Denttro del archivo settings en webserver en "INSTALLED_APPS ="
-INSTALLED_APPS = [
-    "XXXXX",
-    "xxxxxx",
-
-    "api",
-]
-
-# Dentro de la carpeta webserver1 migra el modelo  un formato sqlite3
-python .\manage.py makemigrations
-
+# Crear app con nombre api
+django-admin startapp api 

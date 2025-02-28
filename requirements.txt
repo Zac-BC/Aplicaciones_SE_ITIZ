@@ -1,6 +1,28 @@
+# Aplicaciones de Escritorio
+PyQt6>=6.7.1
+
+# Para control de gpio de la raspberry
+#gpiod>=2.1.3
+
+# Puerto Serie
+pyserial
+
+# Para servidor
 django
 djangorestframework
 django-allauth
 django-cors-headers
 django-rest-auth-dj4
-python-http-client
+
+daphne
+channels==3.0.5
+channels_redis==4.0.0
+
+requests
+Pillow
+
+# Tratamiendo de imagenes
+opencv-contrib-python
+
+#Terminal
+blessed

@@ -7,16 +7,14 @@ class PokemonAPIView (APIView):
     renderer_classes = [JSONRenderer]
     def get(self, request, format=None):
 
-        contenido = {
-            'Resultado':"Comunicacion exitosa",
-            'Pasas': "Las pasas son deliciosas"
+        contenido =  {
+            'Resultado': "Comunicación exitosa"
         }
         return Response(contenido)
 
     def post(self, request, format=None):
 
-        contenido = {
-            'Resultado':"Comunicacion exitosa",
-            'Pasas': "Las pasas son deliciosas"
+        contenido =  {
+            'Resultado': "Comunicación exitosa POST"
         }
         return Response(contenido)

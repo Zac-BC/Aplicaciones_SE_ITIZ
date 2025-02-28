@@ -2,7 +2,7 @@
 URL configuration for webserver project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/5.1/topics/http/urls/
+    https://docs.djangoproject.com/en/4.2/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -16,19 +16,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from api.urls import urlspattern_api
+from api.urls import urlspatterns_api
 
-
-#Restframework
+# Rest framework
 from rest_framework import routers
-from api.viewsets import PokemonViewset, SensoresViewset
+from api.viewsets import PokemonViewset, SensorViewset
 
 router = routers.DefaultRouter()
-router.register('pokemon',PokemonViewset)
-router.register('sensores',SensoresViewset)
+router.register('pokemon', PokemonViewset)
+router.register('sensor', SensorViewset)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(urlspattern_api)),
+    path('api/', include(urlspatterns_api)),
     path('api/', include(router.urls))
 ]
