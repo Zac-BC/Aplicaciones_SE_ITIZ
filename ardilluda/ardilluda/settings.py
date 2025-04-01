@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--ikpt7j+f(ijlnsr!v224+xc$r0w)ve3qt-pfy5k(unfsel7_b
 DEBUG = True
 
 #Aqui va la ip de nuestro servidor && 127.0.0.1
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','www.proyectosdeingenieriaitiz.com']
 
 # Application definition
 
