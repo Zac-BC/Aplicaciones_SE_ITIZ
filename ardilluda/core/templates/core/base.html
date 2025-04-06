@@ -40,22 +40,22 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="index.html">Inicio</a>
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'main:home' %}">Inicio</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="about.html">Historia</a>
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'main:about' %}">Historia</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="services.html">Servicios</a>
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'main:servicios' %}">Servicios</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="store.html">Visítanos</a>
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'main:store' %}">Visítanos</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="contact.html">Contacto</a>
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'main:contacto' %}">Contacto</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="blog.html">Blog</a>
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'blog:blog' %}">Blog</a>
             </li>
           </ul>
         </div>
