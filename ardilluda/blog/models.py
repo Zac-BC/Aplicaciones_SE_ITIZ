@@ -27,3 +27,6 @@ class Entrada(models.Model):
     cathegories = models.ManyToManyField(Categoria, verbose_name= "Categoria",related_name="get_post")
     created = models.DateTimeField(auto_now_add= True, verbose_name= "Fecha creacion")
     updated = models.DateTimeField(auto_now= True, verbose_name= "Fecha de actualizacin")
+
+    def __str__(self):
+        return self.title

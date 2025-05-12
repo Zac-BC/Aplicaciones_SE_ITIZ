@@ -1,0 +1,43 @@
+{% extends 'core/base.html' %}
+
+{ load static %}
+{% block contenido %}
+
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          {% for entrada in categoria.get_post.all %}
+
+
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-innerv text-center rounded">
+              <h2 class="section-heading mb-5">
+                <span class="section-heading-upper">{{entrada.published |date:"SHORT_DATE_FORMAT"}}</span>
+                <span class="section-heading-lower">{{entrada.tittle}}</span>
+              </h2>
+              <p class="mb-0">
+                <img class="mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{entrada.image.url}}"alt="">
+              </p>
+              <p class="mb-0 mbt">
+                {{entrada.content}}.
+              </p>
+              <p class="mb-0 mbt">
+                <span class="section-heading-under">Publicado por <em><b>{{entrada.author}}</b></em> en <em>
+
+                  {% for categoria in entrada.cathegories.all %}
+                  <a href="{% url 'blog:categoria' categoria.id %}" class="link">{{categoria}}</a>, 
+                  {% endfor %}
+
+                </em></span>
+              </p>
+            </div>
+          </div>
+            
+          {% endfor %}
+
+            
+        </div>
+     </div>
+  </section>
+
+{% endblock contenido %}
